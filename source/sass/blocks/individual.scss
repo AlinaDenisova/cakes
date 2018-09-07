@@ -1,0 +1,52 @@
+.individual__container {
+  @include container;
+}
+
+.individual__title {
+  font-family: "Playfair Display", "Arial", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  margin: 0;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.individual__add {
+  color: #32313d;
+  font-family: "Intro Script R H2 Base", "Comic Sans MS", cursive;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.individual__group {
+  background-color: $white;
+  padding: 17px 20px;
+  margin-bottom: 10px;
+}
+
+.individual__text {
+  display: flex;
+  font-family: "Playfair Display", "Arial", sans-serif;
+  color: #f50049;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.individual__number {
+  font-size: 35px;
+  line-height: 10px;
+  margin-right: 4.5%;
+}
+
+.individual__group-title {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+  display: block;
+}

@@ -1,0 +1,24 @@
+@mixin desktop-width {
+  max-width: 1240px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin container {
+  box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 47px;
+  }
+}
+
+

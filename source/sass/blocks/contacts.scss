@@ -1,0 +1,25 @@
+.contacts__container {
+  @include container;
+}
+
+.contacts__title {
+  font-family: "Playfair Display", "Arial", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.2px;
+  margin: 0;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contacts__add {
+  color: #32313d;
+  font-family: "Intro Script R H2 Base", "Comic Sans MS", cursive;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0;
+  padding-bottom: 25px;
+  letter-spacing: 1px;
+}

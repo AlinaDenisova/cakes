@@ -1,0 +1,15 @@
+.main-nav {
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 320px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: auto;
+  }
+}

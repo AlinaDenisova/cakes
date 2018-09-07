@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/PlayfairDisplay-Bold.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/IntroScriptR-H2Base.woff2" as="font" crossorigin>
+    <link href="css/style.css" rel="stylesheet">
+    <title>"Cakes" - торты на заказ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body class="no-js">
+
+    <header class="page-header page-header--closed">
+      <div class="page-header__container">
+
+        <div class="page-header__logo">
+          <a class="page-header__logo-link">Cakes</a>
+        </div>
+
+        <button class="page-header__toggle" type="button">
+          <span class="page-header__toggle-line"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <nav class="main-nav">
+          <ul class="site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#catalog">Наши торты</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#individual">Индивидуальный заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#about-us">О нас</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#order">Как заказать</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="page-header__phone" href="tel:+7(906)8999296"> +7 906 899 92 96</a>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="promo">
+        <div class="promo__container">
+          <div class="promo__text">
+            <h1 class="promo__title">Торты<br> на заказ</h1>
+            <p class="promo__add">Ручная работа</p>
+          </div>
+          <ul class="promo__list">
+            <li class="promo__item">Натуральные ингредиенты</li>
+            <li class="promo__item">Доставка бесплатно при&nbsp;заказе от&nbsp;2000&nbsp;рублей*</li>
+          </ul>
+          <a class="btn promo__btn" href="#">Выбрать торт</a>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <h2 class="catalog__title" id="catalog">Наши торты</h2>
+        <div class="catalog__list">
+            <div class="catalog__item catalog-card" href="#">
+              <a class="catalog-card__link" href="#">
+                <div class="catalog-card__text catalog-card__text--first-row">
+                  <h3 class="catalog-card__title">Классические</h3>
+                  <span class="catalog-card__quantity">24 вида</span>
+                </div>
+                <a class="catalog-card__arrow catalog-card__arrow--classic" href="#"><span class="catalog-card__show">Смотреть</a>
+                <div class="catalog-card__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/catalog-classic-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-classic-tablet.webp">
+                    <source type="image/webp" srcset="img/catalog-classic-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/catalog-classic-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/catalog-classic-tablet.jpg">
+                    <img src="img/catalog-classic-mobile.jpg" alt="Фото одного из видов тортов">
+                  </picture>
+                </div>
+              </a>
+            </div>
+
+          <div class="catalog__wrapper">
+            <div class="catalog__item catalog-card" href="#">
+              <a class="catalog-card__link" href="#">
+                <div class="catalog-card__text catalog-card__text--first-row">
+                  <h3 class="catalog-card__title">Муссовые</h3>
+                  <span class="catalog-card__quantity">12 видов</span>
+                </div>
+                <a class="catalog-card__arrow" href="#" href="#"><span class="visually-hidden">Смотреть</span></a>
+                <div class="catalog-card__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/catalog-mousse-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-mousse-tablet.webp">
+                    <source type="image/webp" srcset="img/catalog-mousse-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/catalog-mousse-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/catalog-mousse-tablet.jpg">
+                    <img src="img/catalog-mousse-mobile.jpg" alt="Фото одного из видов тортов">
+                  </picture>
+                </div>
+              </a>
+            </div>
+
+            <div class="catalog__item catalog-card" href="#">
+              <a class="catalog-card__link" href="#">
+                <div class="catalog-card__text catalog-card__text--first-row">
+                  <h3 class="catalog-card__title">Свадебные</h3>
+                  <span class="catalog-card__quantity">20 видов</span>
+                </div>
+                <a class="catalog-card__arrow" href="#"><span class="visually-hidden">Смотреть</span></a>
+                <div class="catalog-card__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/catalog-wedding-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-wedding-tablet.webp">
+                    <source type="image/webp" srcset="img/catalog-wedding-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/catalog-wedding-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/catalog-wedding-tablet.jpg">
+                    <img src="img/catalog-wedding-mobile.jpg" alt="Фото одного из видов тортов">
+                  </picture>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="catalog__wrapper">
+            <div class="catalog__item catalog-card" href="#">
+              <a class="catalog-card__link" href="#">
+                <div class="catalog-card__text">
+                  <h3 class="catalog-card__title">Мужчинам</h3>
+                  <span class="catalog-card__quantity">12 видов</span>
+                </div>
+                <a class="catalog-card__arrow" href="#" href="#"><span class="visually-hidden">Смотреть</span></a>
+                <div class="catalog-card__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/catalog-men-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-men-tablet.webp">
+                    <source type="image/webp" srcset="img/catalog-men-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/catalog-men-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/catalog-men-tablet.jpg">
+                    <img src="img/catalog-men-mobile.jpg" alt="Фото одного из видов тортов">
+                  </picture>
+                </div>
+              </a>
+            </div>
+
+            <div class="catalog__item catalog-card" href="#">
+              <a class="catalog-card__link" href="#">
+                <div class="catalog-card__text">
+                  <h3 class="catalog-card__title">Женщинам</h3>
+                  <span class="catalog-card__quantity">16 видов</span>
+                </div>
+                <a class="catalog-card__arrow" href="#"><span class="visually-hidden">Смотреть</span></a>
+                <div class="catalog-card__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/catalog-women-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-women-tablet.webp">
+                    <source type="image/webp" srcset="img/catalog-women-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/catalog-women-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/catalog-women-tablet.jpg">
+                    <img src="img/catalog-women-mobile.jpg" alt="Фото одного из видов тортов">
+                  </picture>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="catalog__item catalog-card" href="#">
+            <a class="catalog-card__link" href="#">
+              <div class="catalog-card__text">
+                <h3 class="catalog-card__title">Детские</h3>
+                <span class="catalog-card__quantity">18 видов</span>
+              </div>
+              <a class="catalog-card__arrow" href="#" href="#"><span class="visually-hidden">Смотреть</span></a>
+              <div class="catalog-card__img catalog-card__img--kids">
+                <picture>
+  <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/catalog-kids-desktop.webp">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-kids-tablet.webp">
+                  <source type="image/webp" srcset="img/catalog-kids-mobile.webp"> -->
+
+                  <source media="(min-width: 1240px)" srcset="img/catalog-kids-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="img/catalog-kids-tablet.jpg">
+                  <img src="img/catalog-kids-mobile.jpg" alt="Фото одного из видов тортов">
+                </picture>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="individual">
+        <div class="individual__container">
+          <h2 class="individual__title" id="individual">Индивидуальный заказ</h2>
+          <p class="individual__add">Соберите торт в 3 шага</p>
+
+          <div class="individual__group individual-fill slider">
+            <div class="individual__text">
+              <span class="individual__number">01</span>
+              <h3 class="individual__group-title">Выберите начинку</h3>
+            </div>
+
+            <ul class="slider__slides individual-fill__list">
+              <li class="slider__slide slider__slide--1 slider__slide--active individual-fill__item">
+                <div class="individual-fill__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/fill-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/fill-tablet.webp">
+                    <source type="image/webp" srcset="img/fill-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/fill-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/fill-tablet.jpg">
+                    <img src="img/fill-mobile.jpg" alt="Фото варианта начинки">
+                  </picture>
+                </div>
+                <div class="individual-fill__text">
+                  <h4 class="individual-fill__title">Шоколадный ганеш</h4>
+                  <p class="individual-fill__descr">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  <span class="individual-fill__price">1000 руб/кг</span>
+                  <a class="btn individual__btn">Выбрать</a>
+                </div>
+              </li>
+
+              <li class="slider__slide slider__slide--2 individual-fill__item">
+                <div class="individual-fill__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/fill-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/fill-tablet.webp">
+                    <source type="image/webp" srcset="img/fill-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/fill-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/fill-tablet.jpg">
+                    <img src="img/fill-mobile.jpg" alt="Фото варианта начинки">
+                  </picture>
+                </div>
+                <div class="individual-fill__text">
+                  <h4 class="individual-fill__title">Шоколадный ганеш2</h4>
+                  <p class="individual-fill__descr">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  <span class="individual-fill__price">1000 руб/кг</span>
+                  <a class="btn individual__btn">Выбрать</a>
+                </div>
+              </li>
+
+              <li class="slider__slide slider__slide--3 individual-fill__item">
+                <div class="individual-fill__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/fill-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/fill-tablet.webp">
+                    <source type="image/webp" srcset="img/fill-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/fill-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/fill-tablet.jpg">
+                    <img src="img/fill-mobile.jpg" alt="Фото варианта начинки">
+                  </picture>
+                </div>
+                <div class="individual-fill__text">
+                  <h4 class="individual-fill__title">Шоколадный ганеш3</h4>
+                  <p class="individual-fill__descr">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  <span class="individual-fill__price">1000 руб/кг</span>
+                  <a class="btn individual__btn">Выбрать</a>
+                </div>
+              </li>
+
+              <li class="slider__slide slider__slide--4 individual-fill__item">
+                <div class="individual-fill__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/fill-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/fill-tablet.webp">
+                    <source type="image/webp" srcset="img/fill-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/fill-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/fill-tablet.jpg">
+                    <img src="img/fill-mobile.jpg" alt="Фото варианта начинки">
+                  </picture>
+                </div>
+                <div class="individual-fill__text">
+                  <h4 class="individual-fill__title">Шоколадный ганеш4</h4>
+                  <p class="individual-fill__descr">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  <span class="individual-fill__price">1000 руб/кг</span>
+                  <a class="btn individual__btn">Выбрать</a>
+                </div>
+              </li>
+
+              <li class="slider__slide slider__slide--5 individual-fill__item">
+                <div class="individual-fill__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/fill-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/fill-tablet.webp">
+                    <source type="image/webp" srcset="img/fill-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/fill-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/fill-tablet.jpg">
+                    <img src="img/fill-mobile.jpg" alt="Фото варианта начинки">
+                  </picture>
+                </div>
+                <div class="individual-fill__text">
+                  <h4 class="individual-fill__title">Шоколадный ганеш5</h4>
+                  <p class="individual-fill__descr">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  <span class="individual-fill__price">1000 руб/кг</span>
+                  <a class="btn individual__btn">Выбрать</a>
+                </div>
+              </li>
+
+              <li class="slider__slide slider__slide--6 individual-fill__item">
+                <div class="individual-fill__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/fill-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/fill-tablet.webp">
+                    <source type="image/webp" srcset="img/fill-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/fill-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/fill-tablet.jpg">
+                    <img src="img/fill-mobile.jpg" alt="Фото варианта начинки">
+                  </picture>
+                </div>
+                <div class="individual-fill__text">
+                  <h4 class="individual-fill__title">Шоколадный ганеш6</h4>
+                  <p class="individual-fill__descr">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  <span class="individual-fill__price">1000 руб/кг</span>
+                  <a class="btn individual__btn">Выбрать</a>
+                </div>
+              </li>
+            </ul>
+
+            <button class="slider__btn slider__btn--prev">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="slider__btn slider__btn--next">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+            <ul class="slider__dots"></ul>
+          </div>
+
+          <div class="individual__group individual-size slider">
+            <div class="individual__text">
+              <span class="individual__number">02</span>
+              <h3 class="individual__group-title">Размер</h3>
+            </div>
+            <ul class="slider__slides individual-size__list">
+              <li class="slider__slide slider__slide--1 individual-size__item">
+                <span class="individual-size__circle">1 кг</span>
+                <p class="individual-size__text">17-18 см (1 кг – 6 персон)</p>
+              </li>
+
+              <li class="slider__slide slider__slide--2 individual-size__item">
+                <span class="individual-size__circle">2 кг</span>
+                <p class="individual-size__text">23-24 см (10–12 персон)</p>
+              </li>
+              <li class="slider__slide slider__slide--3 individual-size__item">
+                <span class="individual-size__circle">5 кг</span>
+                <p class="individual-size__text">Два яруса 25 и 20 см (15-20 персон)</p>
+              </li>
+              <li class="slider__slide slider__slide--4 individual-size__item">
+                <span class="individual-size__circle">8 кг</span>
+                <p class="individual-size__text">Три яруса 30,25 и 18 см (25-30 персон)</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="individual__group individual-decor slider">
+            <div class="individual__text">
+              <span class="individual__number">03</span>
+              <h3 class="individual__group-title">Оформление</h3>
+            </div>
+            <ul class="slider__slides individual-decor__list">
+              <li class="slider__slide slider__slide--1 individual-decor__item">
+                <div class="individual-decor__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/decor1-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/decor1-tablet.webp">
+                    <source type="image/webp" srcset="img/decor2-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/decor1-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/decor1-tablet.jpg">
+                    <img src="img/decor2-mobile.jpg" alt="Фото варианта оформления">
+                  </picture>
+                </div>
+                <div class="individual-decor__text">
+                  <h4 class="individual-decor__title">Ягодное ассорти</h4>
+                  <span class="individual-decor__price">700 руб/кг</span>
+                  <a class="btn individual__btn">Выбрать</a>
+                </div>
+              </li>
+
+              <li class="slider__slide slider__slide--2 individual-decor__item">
+                <div class="individual-decor__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/decor2-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/decor2-tablet.webp">
+                    <source type="image/webp" srcset="img/decor2-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/decor2-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/decor2-tablet.jpg">
+                    <img src="img/decor2-mobile.jpg" alt="Фото варианта оформления">
+                  </picture>
+                </div>
+                <div class="individual-decor__text">
+                  <h4 class="individual-decor__title">Маршмелоу</h4>
+                  <span class="individual-decor__price">600 руб/кг</span>
+                  <a class="btn individual__btn">Выбрать</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="individual__group your-choose">
+            <div class="individual__text">
+              <h3 class="individual__group-title">Ваш выбор</h3>
+            </div>
+            <ul class="slider__slides individual-decor__list">
+              <li class="slider__slide slider__slide--1 individual-decor__item">
+                <div class="individual-decor__img">
+                  <picture>
+    <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/decor2-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/decor2-tablet.webp">
+                    <source type="image/webp" srcset="img/decor2-mobile.webp"> -->
+
+                    <source media="(min-width: 1240px)" srcset="img/decor2-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/decor2-tablet.jpg">
+                    <img src="img/decor2-mobile.jpg" alt="Фото варианта оформления">
+                  </picture>
+                </div>
+                <div class="individual-decor__text">
+                  <h4 class="individual-decor__title">Маршмелоу</h4>
+                  <span class="individual-decor__price">600 руб/кг</span>
+                  <a class="btn individual__btn">Заказать торт</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="reviews__container">
+          <h2 class="reviews__title" id="reviews">Отзывы</h2>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <div class="about-us__container">
+          <h2 class="about-us__title" id="about-us">О нас</h2>
+          <p class="about-us__add">О кондитере</p>
+
+          <div class="about-us__img">
+            <picture>
+<!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/confectioner-desktop.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/confectioner-tablet.webp">
+              <source type="image/webp" srcset="img/confectioner-mobile.webp"> -->
+
+              <source media="(min-width: 1240px)" srcset="img/confectioner-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/confectioner-tablet.jpg">
+              <img src="img/confectioner-mobile.jpg" alt="Фото кондитера">
+            </picture>
+          </div>
+          <div class="about-us__text">
+            <h3 class="about-us__slogan">Кондитер – как призвание</h3>
+            <p class="about-us__content">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство. С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.</p>
+            <h3 class="about-us__slogan">Принцип – натуральные ингредиенты</h3>
+            <p class="about-us__content">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов. </p>
+          </div>
+
+          <ul class="about-us__list">
+            <li class="about-us__item">
+              <a class="about-us__link" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="about-us__item">
+              <a class="about-us__link" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="about-us__item">
+              <a class="about-us__link" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="about-us__quote">
+            <blockquote class="about-us__content">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</blockquote>
+            <cite class="about-us__sign">
+              <picture>
+  <!--                 <source type="image/webp" media="(min-width: 1240px)" srcset="img/sign-desktop.webp">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/sign-tablet.webp">
+                <source type="image/webp" srcset="img/sign-mobile.webp"> -->
+
+                <source media="(min-width: 1240px)" srcset="img/sign-desktop.png">
+                <source media="(min-width: 768px)" srcset="img/sign-tablet.png">
+                <img src="img/sign-mobile.png" alt="Подпись кондитера">
+              </picture>
+            </cite>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features__container">
+          <h2 class="features__title">Наши преимущества</h2>
+          <p class="features__add">Почему нас выбирают</p>
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__slogan">Без искусственных добавок</h3>
+              <p class="features__content">Работаем  с натуральными ингредиентами и свежими продуктами</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__slogan">Свежий торт в день торжества</h3>
+              <p class="features__content">Торты изготавливаются в течение суток до отправки</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="customer-care">
+        <div class="customer-care__container">
+          <div class="customer-care__text">
+            <h2 class="customer-care__title">Забота о клиентах</h2>
+            <p class="contacts__add">Для нас важно</p>
+            <p class="customer-care__content">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="order">
+        <div class="order__container">
+          <div class="order__text">
+            <h2 class="order__title" id="order">Как заказать</h2>
+            <ol class="order__list">
+              <li class="order__item">
+                <h3 class="order__slogan">Срок заказа</h3>
+                <p class="order__content">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум за неделю.</p>
+              </li>
+              <li class="order__item">
+                <h3 class="order__slogan">Доставка по городу</h3>
+                <p class="order__content">Доставка в пределах города 200 рубей , при заказе на сумму более 2000 доставка бесплатно.</p>
+              </li>
+              <li class="order__item">
+                <h3 class="order__slogan">Доставка за городом</h3>
+                <p class="order__content">Доставка за пределами города рассчитывается индивидуально.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__container">
+          <h2 class="contacts__title" id="contacts">Контакты</h2>
+          <p class="contacts__add">Остались вопросы?</p>
+          <div class="contacts__wrapper contacts-form">
+            <p class="contacts-form__descr">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+            <form class="contacts-form__form">
+              <label class="visually-hidden" for="user-name">Ваше имя</label>
+              <input class="contacts-form__field" id="user-name" type="text" name="user-name" placeholder="Ваше имя" required>
+              <label class="visually-hidden" for="user-email">Email адрес</label>
+              <input class="contacts-form__field" id="user-email" type="email" name="user-email" placeholder="Email адрес" required>
+              <label class="visually-hidden" for="user-question">Ваш вопрос</label>
+              <textarea class="contacts-form__field contacts-form__field--textarea" id="user-question" name="user-question" placeholder="Ваш вопрос" required></textarea>
+              <button class="btn contacts-form__btn" type="submit">Отправить</button>
+            </form>
+          </div>
+          <div class="contacts__wrapper contacts-phone">
+            <p class="contacts-phone__descr">Или позвоните по телефону:
+              <a class="contacts-phone__info" href="tel:+7(906)8999296"> +7 906 899 92 96</a>
+            </p>
+            <p class="contacts-phone__descr">Наша почта : <a class="contacts-phone__info" href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a>
+            </p>
+            <p class="contacts-phone__descr">Мы в соц. сетях:
+              <ul class="contacts-phone__list">
+                <li class="contacts-phone__item">
+                  <a class="contacts-phone__link" href="#">
+                    <span class="visually-hidden">Инстаграм</span>
+                  </a>
+                </li>
+                <li class="contacts-phone__item">
+                  <a class="contacts-phone__link" href="#">
+                    <span class="visually-hidden">Вконтакте</span>
+                  </a>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-link">Cakes</a>
+        </div>
+
+        <ul class="footer-nav">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#catalog">Наши торты</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#individual">Индивидуальный заказ</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#about-us">О нас</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#order">Как заказать</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#contacts">Контакты</a>
+          </li>
+          <li class="footer-nav__item footer-nav__item--phone">
+            <a class="footer-nav__link" href="tel:+7(906)8999296"> +7 906 899 92 96</a>
+          </li>
+        </ul>
+
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+        </ul>
+
+       <a class="page-footer__copyright" href="#">©&emsp;2018 Cakes</a>
+      </div>
+    </footer>
+
+  <script src="js/scripts/remove-no-js.js"></script>
+  <script src="js/scripts/slider.js"></script>
+  <script src="js/scripts/navigation.js"></script>
+  </body>
+</html>

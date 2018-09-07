@@ -1,0 +1,225 @@
+.promo {
+  background-image: url("../img/promo-cake-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: 100%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: url("../img/promo-cake-tablet.png");
+    background-position: 100% 0%;
+    background-size: auto;
+    margin-bottom: 115px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../img/promo-cake-desktop.png");
+    background-position: 126% 0%;
+    background-size: auto;
+    margin-bottom: 0;
+  }
+}
+
+.promo__container {
+  @include container;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__container {
+    @include desktop-width;
+    padding-bottom: 270px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__text {
+    width: 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__text {
+    width: 370px;
+  }
+}
+
+.promo__title {
+  color: #2d2829;
+  font-family: "Playfair Display", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 4.5px;
+  margin: 0;
+  padding-top: 125px;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__title {
+    font-size: 75px;
+    line-height: 55px;
+    text-align: left;
+    letter-spacing: 4px;
+    padding-top: 87px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__title {
+    font-size: 98px;
+    line-height: 68px;
+    text-align: left;
+    letter-spacing: 4px;
+    padding-top: 122px;
+  }
+}
+
+.promo__add {
+  color: #32313d;
+  font-family: "Intro Script R H2 Base", "Comic Sans MS", cursive;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+  padding: 25px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__add {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    letter-spacing: normal;
+    padding: 30px 0 55px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__add {
+    font-size: 41px;
+    line-height: 41px;
+    padding: 35px 0 60px 0;
+  }
+}
+
+.promo__list {
+  @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__list {
+    order: 2;
+    display: flex;
+    margin-top: 145px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__list {
+    margin-top: 130px;
+  }
+}
+
+.promo__item {
+  position: relative;
+  color: $black;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  padding-left: 42px;
+  padding-bottom: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/icon/promo-sprite.png");
+    background-repeat: no-repeat;
+  }
+
+  &:first-child::before {
+    top: -2px;
+    background-position: -10px -62px;
+  }
+
+  &:last-child::before {
+    background-position: -10px -10px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__item {
+    margin-right: 8.8%;
+    line-height: 18px;
+    padding-left: 65px;
+    padding-top: 15px;
+    box-sizing: border-box;
+
+    &:first-child {
+      width: 23.2%;
+    }
+
+    &:last-child {
+      width: 37.2%;
+      padding-left: 72px;
+     }
+
+    &::before {
+      width: 55px;
+      height: 55px;
+    }
+
+    &:first-child::before {
+      top: 0;
+      background-position: -10px -189px;
+    }
+
+    &:last-child::before {
+      background-position: -10px -115px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__item {
+    margin-right: 62px;
+
+    &:first-child {
+      width: 158px;
+    }
+
+    &:last-child {
+      width: 245px;
+     }
+  }
+}
+
+.promo__btn {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 226px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__btn {
+    margin: 0;
+  }
+}
+
+
