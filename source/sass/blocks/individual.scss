@@ -3,10 +3,9 @@
 }
 
 .individual__title {
-  font-family: "Playfair Display", "Arial", sans-serif;
-  font-size: 28px;
+  @include font(28px, 30px);
+  font-family: $playfair;
   font-weight: 700;
-  line-height: 30px;
   letter-spacing: 1.2px;
   margin: 0;
   display: block;
@@ -15,38 +14,51 @@
 }
 
 .individual__add {
+  @include font(22px, 22px);
   color: #32313d;
-  font-family: "Intro Script R H2 Base", "Comic Sans MS", cursive;
-  font-size: 22px;
-  line-height: 22px;
+  font-weight: 700;
+  font-family: $introscriptr;
   margin: 0;
   padding-bottom: 20px;
   text-align: center;
 }
 
-.individual__group {
-  background-color: $white;
-  padding: 17px 20px;
-  margin-bottom: 10px;
+//tablet
+
+@media (min-width: $tablet-width) {
+  .individual__container {
+    padding: 0 20px;
+  }
+
+  .individual__title {
+    @include font(33px, 33px);
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+
+  .individual__add {
+    @include font(24px, 24px);
+    letter-spacing: 1px;
+    padding-bottom: 35px;
+  }
 }
 
-.individual__text {
-  display: flex;
-  font-family: "Playfair Display", "Arial", sans-serif;
-  color: #f50049;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
+//desktop
 
-.individual__number {
-  font-size: 35px;
-  line-height: 10px;
-  margin-right: 4.5%;
-}
+@media (min-width: $desktop-width) {
+  .individual__container {
+    @include desktop-width;
+  }
 
-.individual__group-title {
-  font-size: 20px;
-  line-height: 20px;
-  margin: 0;
-  display: block;
+  .individual__title {
+    @include font(49px, 49px);
+    letter-spacing: 0.4px;
+    margin-bottom: 15px;
+  }
+
+  .individual__add {
+    @include font(34px, 34px);
+    letter-spacing: normal;
+    padding-bottom: 50px;
+  }
 }

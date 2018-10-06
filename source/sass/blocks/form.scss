@@ -1,0 +1,238 @@
+.form__list {
+  @include list-reset;
+  position: relative;
+  counter-reset: myCounter;
+}
+
+.form__item {
+  position: relative;
+  padding: 18px 20px 26px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+
+  &::before {
+    @include font(36px, 36px);
+    position: absolute;
+    top: 0;
+    left: 17px;
+    display: inline-block;
+    counter-increment: myCounter;
+    content: counter(myCounter, decimal-leading-zero);
+    font-family: $playfair;
+    color: $brand-color;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__item-title {
+  @include font(20px, 20px);
+  margin: 0;
+  margin-left: 40px;
+  font-family: $playfair;
+  color: $brand-color;
+}
+
+.form__item-btn {
+  margin: 0 auto;
+  padding: 20px 60px 17px;
+  border-radius: 30px;
+  align-self: center;
+}
+
+.form__btn {
+  margin: 0 auto;
+  padding: 20px 62px 17px;
+}
+
+.form__fill-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 240px;
+}
+
+.form__decor-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 240px;
+}
+
+.form__fill-slider-counter {
+  @include font(12px, 25px);
+  position: absolute;
+  right: 7px;
+  top: 105px;
+  color: #ffffff;
+}
+
+.form__decor-slider-counter {
+  position: absolute;
+  right: 40px;
+  bottom: 102px;
+  color: rgba(70, 70, 70, 0.7);
+  cursor: default;
+  z-index: 1;
+}
+
+//tablet
+
+@media (min-width: $tablet-width) {
+  .form__item {
+    display: flex;
+    padding: 36px 20px 52px;
+    margin-bottom: 21px;
+    box-shadow: 0 10px 13px 0 rgba(163, 6, 60, 0.05);
+
+    &:first-child {
+      padding-right: 120px;
+      padding-bottom: 56px;
+    }
+
+    &:last-child {
+      padding: 36px 80px 48px 20px;
+
+      background: #ffffff url("../img/decor-bg-tablet.jpg") no-repeat 0 120px;
+    }
+
+    &::before {
+      @include font(42px, 30px);
+      top: 30px;
+      left: 45px;
+    }
+  }
+
+  .form__item-title {
+    @include font(23px, 20px);
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 38px;
+    width: 90px;
+
+    &--decor {
+      margin-right: 70px;
+    }
+  }
+
+  .form__item-btn {
+    margin: 0 auto;
+    padding: 15px 46px 14px;
+
+    &--fill {
+      @include font(10px, 13px);
+      position: absolute;
+      bottom: 25px;
+      right: 90px;
+    }
+
+    &--size {
+      display: none;
+    }
+
+    &--decor {
+      display: none;
+    }
+  }
+
+  .form__btn {
+    @include font(10px, 10px);
+    margin: 0;
+    margin-top: auto;
+    padding: 16px 41px 13px;
+  }
+
+  .form__fill-wrapper {
+    width: auto;
+  }
+
+  .form__size-wrapper {
+    margin: 0 auto;
+  }
+
+  .form__decor-wrapper {
+    width: auto;
+  }
+
+  .form__fill-slider-counter {
+    right: -17px;
+    top: 237px;
+    color: rgba(70, 70, 70, 0.7);
+  }
+
+  .form__decor-slider-counter {
+    right: -50px;
+    bottom: 5px;
+  }
+}
+
+//desktop
+
+@media (min-width: $desktop-width) {
+  .form__item {
+    margin-bottom: 35px;
+    padding: 73px 55px 90px;
+
+    &:last-child {
+      padding: 73px 80px 60px 55px;
+      background: #ffffff url("../img/decor-bg-desktop.jpg") no-repeat 20px 200px;
+    }
+
+    &::before {
+      @include font(75px, 40px);
+      top: 55px;
+      left: 80px;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  .form__item-title {
+    @include font(34px, 25px);
+    margin-top: 50px;
+    margin-right: 35px;
+    width: 180px;
+    letter-spacing: 0.3px;
+
+    &--decor {
+      margin-right: 50px;
+    }
+  }
+
+  .form__fill-wrapper {
+    margin: 0;
+  }
+
+  .form__item-btn {
+    @include font(13px, 16px);
+    padding: 19px 60px 16px;
+
+    &--fill {
+      bottom: 93px;
+      right: 100px;
+    }
+  }
+
+  .form__btn {
+    @include font(13px, 16px);
+    margin: 0;
+    margin-top: 20px;
+    padding: 19px 60px 16px;
+  }
+
+  .form__fill-list-wrapper {
+    margin: 0;
+  }
+
+  .form__fill-slider-counter {
+    @include font(18px, 25px);
+    right: -130px;
+    top: 390px;
+  }
+
+  .form__decor-slider-counter {
+    @include font(18px, 26px);
+    right: -65px;
+    bottom: 8px;
+  }
+}

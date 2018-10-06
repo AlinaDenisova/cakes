@@ -1,65 +1,20 @@
 .promo {
   background-image: url("../img/promo-cake-mobile.png");
   background-repeat: no-repeat;
-  background-position: 50% 0%;
-  background-size: 100%;
+  background-position: 50% -40px;
+  background-size: auto;
   margin-bottom: 40px;
-}
-
-@media (min-width: $tablet-width) {
-  .promo {
-    background-image: url("../img/promo-cake-tablet.png");
-    background-position: 100% 0%;
-    background-size: auto;
-    margin-bottom: 115px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo {
-    background-image: url("../img/promo-cake-desktop.png");
-    background-position: 126% 0%;
-    background-size: auto;
-    margin-bottom: 0;
-  }
 }
 
 .promo__container {
   @include container;
 }
 
-@media (min-width: $tablet-width) {
-  .promo__container {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo__container {
-    @include desktop-width;
-    padding-bottom: 270px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .promo__text {
-    width: 280px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo__text {
-    width: 370px;
-  }
-}
-
 .promo__title {
-  color: #2d2829;
-  font-family: "Playfair Display", "Arial", sans-serif;
-  font-size: 48px;
+  @include font(48px, 35px);
+  color: $text-color;
+  font-family: $playfair;
   font-weight: 700;
-  line-height: 35px;
   letter-spacing: 4.5px;
   margin: 0;
   padding-top: 125px;
@@ -67,136 +22,146 @@
   text-align: center;
 }
 
-@media (min-width: $tablet-width) {
-  .promo__title {
-    font-size: 75px;
-    line-height: 55px;
-    text-align: left;
-    letter-spacing: 4px;
-    padding-top: 87px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo__title {
-    font-size: 98px;
-    line-height: 68px;
-    text-align: left;
-    letter-spacing: 4px;
-    padding-top: 122px;
-  }
-}
-
 .promo__add {
+  @include font(22px, 22px);
   color: #32313d;
-  font-family: "Intro Script R H2 Base", "Comic Sans MS", cursive;
-  font-size: 22px;
-  line-height: 22px;
+  font-family: $introscriptr;
   text-align: center;
   margin: 0;
-  padding: 25px 0;
-}
-
-@media (min-width: $tablet-width) {
-  .promo__add {
-    font-size: 36px;
-    line-height: 36px;
-    text-align: left;
-    letter-spacing: normal;
-    padding: 30px 0 55px 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo__add {
-    font-size: 41px;
-    line-height: 41px;
-    padding: 35px 0 60px 0;
-  }
+  padding: 25px 0 20px;
 }
 
 .promo__list {
   @include list-reset;
 }
 
+.promo__item {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.promo__item-text {
+  @include font(14px, 18px);
+  margin: 0;
+  color: #000000;
+  font-weight: 400;
+}
+
+.promo__icon {
+  flex-shrink: 0;
+  margin-right: 10px;
+  fill: $brand-color;
+}
+
+.promo__btn {
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 226px;
+}
+
+//tablet
+
 @media (min-width: $tablet-width) {
+  .promo {
+    background-image: url("../img/promo-cake-tablet.png");
+    background-position-y: 12px;
+    background-position-x: calc((100% - 35%) + 185px);
+    background-size: auto;
+    margin-bottom: 125px;
+  }
+
+  .promo__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo__text {
+    width: 280px;
+  }
+
+  .promo__title {
+    @include font(75px, 55px);
+    text-align: left;
+    letter-spacing: 4px;
+    padding-top: 87px;
+  }
+
+  .promo__add {
+    @include font(36px, 36px);
+    text-align: left;
+    letter-spacing: normal;
+    padding: 30px 0 55px 0;
+  }
+
   .promo__list {
     order: 2;
     display: flex;
     margin-top: 145px;
   }
+
+  .promo__item {
+    width: 32.5%;
+    box-sizing: border-box;
+
+    &:last-child {
+      width: 38%;
+    }
+  }
+
+  .promo__item-text {
+    padding-top: 20px;
+  }
+
+  .promo__icon {
+    width: 55px;
+    height: 55px;
+
+    &--box {
+      margin-right: 15px;
+    }
+  }
+
+  .promo__btn {
+    margin: 0;
+  }
 }
 
+//desktop
+
 @media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../img/promo-cake-desktop.png");
+    background-position-y: 0;
+    background-position-x: calc((100% - 65%) + 270px);
+    background-size: auto;
+    margin-bottom: 10px;
+  }
+
+  .promo__container {
+    @include desktop-width;
+    padding-bottom: 270px;
+  }
+
+  .promo__text {
+    width: 370px;
+  }
+
+  .promo__title {
+    @include font(98px, 68px);
+    text-align: left;
+    letter-spacing: 4px;
+    padding-top: 122px;
+  }
+
+  .promo__add {
+    @include font(41px, 41px);
+    padding: 35px 0 60px 0;
+  }
+
   .promo__list {
     margin-top: 130px;
   }
-}
 
-.promo__item {
-  position: relative;
-  color: $black;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-  padding-left: 42px;
-  padding-bottom: 30px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 33px;
-    height: 33px;
-    background-image: url("../img/icon/promo-sprite.png");
-    background-repeat: no-repeat;
-  }
-
-  &:first-child::before {
-    top: -2px;
-    background-position: -10px -62px;
-  }
-
-  &:last-child::before {
-    background-position: -10px -10px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .promo__item {
-    margin-right: 8.8%;
-    line-height: 18px;
-    padding-left: 65px;
-    padding-top: 15px;
-    box-sizing: border-box;
-
-    &:first-child {
-      width: 23.2%;
-    }
-
-    &:last-child {
-      width: 37.2%;
-      padding-left: 72px;
-     }
-
-    &::before {
-      width: 55px;
-      height: 55px;
-    }
-
-    &:first-child::before {
-      top: 0;
-      background-position: -10px -189px;
-    }
-
-    &:last-child::before {
-      background-position: -10px -115px;
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
   .promo__item {
     margin-right: 62px;
 
@@ -206,20 +171,10 @@
 
     &:last-child {
       width: 245px;
-     }
+    }
+  }
+
+  .promo-text {
+    padding-top: 10px;
   }
 }
-
-.promo__btn {
-  margin: 0 auto;
-  margin-top: 15px;
-  width: 226px;
-}
-
-@media (min-width: $tablet-width) {
-  .promo__btn {
-    margin: 0;
-  }
-}
-
-

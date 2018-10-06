@@ -766,7 +766,7 @@
    * (except for comments in parens).
    *
    * Grammar is:
-   * <source-size-list> = <source-size># [ , <source-size-value> ]? | <source-size-value>
+   * <source-size> = <source-size># [ , <source-size-value> ]? | <source-size-value>
    * <source-size> = <media-condition> <source-size-value>
    * <source-size-value> = <length>
    * http://www.w3.org/html/wg/drafts/html/master/embedded-content.html#attr-img-sizes
@@ -782,7 +782,7 @@
   function parseSizes(strValue) {
 
     // (Percentage CSS lengths are not allowed in this case, to avoid confusion:
-    // https://html.spec.whatwg.org/multipage/embedded-content.html#valid-source-size-list
+    // https://html.spec.whatwg.org/multipage/embedded-content.html#valid-source-size
     // CSS allows a single optional plus or minus sign:
     // http://www.w3.org/TR/CSS2/syndata.html#numbers
     // CSS is ASCII case-insensitive:

@@ -2,11 +2,15 @@
   position: relative;
 }
 
+//tablet
+
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 320px;
   }
 }
+
+//desktop
 
 @media (min-width: $desktop-width) {
   .main-nav {

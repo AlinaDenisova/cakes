@@ -1,38 +1,14 @@
 .page-header {
-  background-color: $white;
+  background-color: #ffffff;
   position: relative;
 }
 
-@media (min-width: $tablet-width) {
-  .page-header {
-    margin-bottom: 10px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header {
-    background-color: #fbebea;
-    margin-bottom: 5px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .page-header__container {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 60px;
-    max-height: 60px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__container {
-    @include desktop-width;
-    padding-top: 60px;
-    padding-bottom: 10px;
-    min-height: 100px;
-    max-height: 100px;
-  }
+.page-header--opened .site-list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
 }
 
 .page-header__toggle {
@@ -55,46 +31,34 @@
     right: 0;
     left: 0;
     height: 2px;
-    background-color: $black;
-    box-shadow: 0 7px 0 0 $black, 0 14px 0 0 $black;
+    background-color: #000000;
+    box-shadow: 0 7px 0 0 #000000, 0 14px 0 0 #000000;
   }
 
   &:hover::after {
-    background-color: $black;
-    box-shadow: 0 7px 0 0 $black, 0 14px 0 0 $black;
+    background-color: #000000;
+    box-shadow: 0 7px 0 0 #000000, 0 14px 0 0 #000000;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__toggle {
-    top: 20px;
-    right: 0;
-    left: 16.8%;
-    width: 26px;
-  }
+.page-header__logo {
+  min-height: 40px;
+  max-height: 40px;
+  padding: 10px 20px 10px 20px;
 }
 
-@media (min-width: $desktop-width) {
-  .page-header__toggle {
-    display: none;
-  }
+.page-header__logo-link {
+  @include font(20px, 20px);
+  color: #000000;
+  font-family: $playfair;
+  font-weight: 700;
 }
 
-.page-header--opened .site-list {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 2;
-  width: 100%;
+.page-header__phone {
+  display: none;
 }
 
-@media (min-width: $tablet-width) {
-  .page-header--opened .site-list {
-    width: 320px;
-    left: -63.4%;
-    top: 60px;
-  }
-}
+//until-desktop
 
 @media (max-width: $until-desktop-width) {
   .page-header--closed .site-list {
@@ -122,13 +86,33 @@
   }
 }
 
-.page-header__logo {
-  min-height: 40px;
-  max-height: 40px;
-  padding: 10px 20px 10px 20px;
-}
+//tablet
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 10px;
+  }
+
+  .page-header--opened .site-list {
+    width: 320px;
+    left: -63.4%;
+    top: 60px;
+  }
+
+  .page-header__container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 60px;
+    max-height: 60px;
+  }
+
+  .page-header__toggle {
+    top: 20px;
+    right: 0;
+    left: 16.8%;
+    width: 26px;
+  }
+
   .page-header__logo {
     width: 205px;
     box-sizing: border-box;
@@ -136,57 +120,54 @@
     min-height: 60px;
     max-height: 60px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header__logo {
-    padding: 0;
-    width: 115px;
-  }
-}
-
-.page-header__logo-link {
-  color: $black;
-  font-family: "Playfair Display", "Arial", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 20px;
-}
-
-@media (min-width: $tablet-width) {
   .page-header__logo-link {
-    font-size: 25px;
+    @include font(25px, 25px);
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header__logo-link {
-    font-size: 28px;
-    letter-spacing: 1.3px;
-  }
-}
-
-.page-header__phone {
-  display: none;
-}
-
-@media (min-width: $tablet-width) {
   .page-header__phone {
+    @include font(15px, 15px);
     margin-left: auto;
     display: inline-block;
-    color: #2d2829;
-    font-size: 15px;
+    color: $text-color;
     font-weight: 700;
-    line-height: 15px;
     box-sizing: border-box;
     padding: 25px 47px 20px 47px;
   }
 }
 
+//desktop
+
 @media (min-width: $desktop-width) {
+  .page-header {
+    background-color: $bg-color;
+    margin-bottom: 5px;
+  }
+
+  .page-header__container {
+    @include desktop-width;
+    padding-top: 55px;
+    padding-bottom: 10px;
+    min-height: 100px;
+    max-height: 100px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__logo {
+    padding: 0;
+    width: 115px;
+  }
+
+  .page-header__logo-link {
+    @include font(28px, 28px);
+    letter-spacing: 1.3px;
+  }
+
   .page-header__phone {
     padding: 0;
-    padding-top: 10px;
+    padding-top: 15px;
   }
 }
-

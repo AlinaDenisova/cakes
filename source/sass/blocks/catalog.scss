@@ -3,24 +3,10 @@
   margin-bottom: 45px;
 }
 
-@media (min-width: $tablet-width) {
-  .catalog {
-    padding: 0 20px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog {
-    @include desktop-width;
-    margin-top: -55px;
-  }
-}
-
 .catalog__title {
-  font-family: "Playfair Display", "Arial", sans-serif;
-  font-size: 28px;
+  @include font(28px, 32px);
+  font-family: $playfair;
   font-weight: 700;
-  line-height: 32px;
   letter-spacing: 1.2px;
   margin: 0;
   display: block;
@@ -28,37 +14,31 @@
   margin-bottom: 30px;
 }
 
-@media (min-width: $tablet-width) {
-  .catalog__title {
-    font-size: 35px;
-    line-height: 35px;
-    text-align: left;
-    letter-spacing: normal;
-    margin-bottom: 40px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog__title {
-    font-size: 50px;
-    line-height: 50px;
-    margin-bottom: 60px;
-  }
-}
-
 .catalog__list {
   @include list-reset;
 }
 
+//tablet
+
 @media (min-width: $tablet-width) {
+  .catalog {
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .catalog__title {
+    @include font(35px, 35px);
+    text-align: left;
+    letter-spacing: normal;
+    margin-bottom: 40px;
+  }
+
   .catalog__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-}
 
-@media (min-width: $tablet-width) {
   .catalog__wrapper {
     width: 39.5%;
 
@@ -68,3 +48,17 @@
   }
 }
 
+//desktop
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    @include desktop-width;
+    margin-top: -55px;
+    margin-bottom: 50px;
+  }
+
+  .catalog__title {
+    @include font(50px, 50px);
+    margin-bottom: 60px;
+  }
+}

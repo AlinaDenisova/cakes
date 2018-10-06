@@ -1,0 +1,197 @@
+.features__container {
+  @include container;
+  padding-top: 40px;
+}
+
+.features__title {
+  @include font(30px, 30px);
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $playfair;
+  text-align: center;
+}
+
+.features__add {
+  @include font(22px, 26px);
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $introscriptr;
+  color: #32313d;
+  text-align: center;
+}
+
+.features__list {
+  @include list-reset;
+  margin: 0 -20px;
+  padding: 10px 30px 10px;
+  background-color: #ffffff;
+}
+
+.features__item {
+  position: relative;
+  margin-bottom: 15px;
+  padding-top: 75px;
+
+  &:nth-child(2) {
+    padding-top: 60px;
+    margin-bottom: 0;
+  }
+}
+
+.features__slogan {
+  margin: 0;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.features__text {
+  @include font(14px, 18px);
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+.features__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  fill: $brand-color;
+}
+
+//tablet
+
+@media (min-width: $tablet-width) {
+  .features__container {
+    margin: 0 auto;
+    background: url("../img/features-tablet.png") no-repeat;
+    background-position-y: 75px;
+    background-position-x: calc((100% - 80%) - 100px);
+    padding-bottom: 80px;
+    padding-top: 63px;
+  }
+
+  .features__title {
+    @include font(34px, 34px);
+    margin-bottom: 10px;
+  }
+
+  .features__add {
+    @include font(26px, 30px);
+  }
+
+  .features__list {
+    margin: 0;
+    background-color: transparent;
+    padding: 50px 18px;
+  }
+
+  .features__item {
+    margin-left: auto;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 70px;
+    width: 52%;
+
+    &:nth-child(2) {
+      padding-top: 0;
+    }
+  }
+
+  .features__slogan {
+    @include font(15px, 18px);
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  .features__text {
+    @include font(14px, 17px);
+    text-align: left;
+  }
+
+  .features__icon {
+    position: absolute;
+    right: auto;
+    margin: 0;
+
+    &--natural {
+      left: 10px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &--fresh {
+      top: 5px;
+      width: 63px;
+      height: 38px;
+    }
+  }
+}
+
+//desktop
+
+@media (min-width: $desktop-width) {
+  .features {
+    background: url("../img/features-desktop.png") no-repeat;
+    background-position-y: 85px;
+    background-position-x: calc((100% - 50%) - 415px);
+  }
+
+  .features__container {
+    @include desktop-width;
+    padding-top: 100px;
+    padding-bottom: 360px;
+    background: none;
+  }
+
+  .features__title {
+    @include font(52px, 60px);
+    margin-bottom: 20px;
+  }
+
+  .features__add {
+    @include font(35px, 40px);
+  }
+
+  .features__list {
+    padding-top: 120px;
+  }
+
+  .features__item {
+    margin-right: 180px;
+    margin-bottom: 40px;
+    padding-left: 80px;
+    width: 470px;
+  }
+
+  .features__slogan {
+    @include font(20px, 24px);
+  }
+
+  .features__text {
+    @include font(19px, 22px);
+    font-weight: normal;
+  }
+
+  .features__icon {
+    top: 10px;
+    left: -10px;
+    margin: 0;
+
+    &--natural {
+      width: 61px;
+      height: 61px;
+    }
+
+    &--fresh {
+      top: 5px;
+      left: -25px;
+      width: 80px;
+      height: 48px;
+    }
+  }
+}

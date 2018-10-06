@@ -1,22 +1,7 @@
 'use strict';
 
-//управление меню навигации
-// var header = document.querySelector(".page-header");
-// var toggle = document.querySelector(".page-header__toggle");
-
-// toggle.addEventListener("click", function(evt) {
-//   evt.preventDefault();
-//   if (header.classList.contains("page-header--closed")) {
-//     header.classList.remove("page-header--closed");
-//     header.classList.add("page-header--opened");
-//   } else {
-//     header.classList.add("page-header--closed");
-//     header.classList.remove("page-header--opened");
-//   }
-// });
-
 window.navigation = (function () {
-  var MOBILE_WIDTH_MAX = 1219;
+  var MOBILE_WIDTH_MAX = 1259;
 
   var header = document.querySelector('.page-header');
   var headerToggle = document.querySelector('.page-header__toggle');

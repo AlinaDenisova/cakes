@@ -7,6 +7,31 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.social__item {
+  box-sizing: border-box;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  opacity: 0.4;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+}
+
+.social__icon {
+  fill: #ffffff;
+}
+
+//tablet
+
 @media (min-width: $tablet-width) {
   .social {
     width: auto;
@@ -17,77 +42,15 @@
   }
 }
 
+//desktop
+
 @media (min-width: $desktop-width) {
   .social {
     order: 0;
     margin-left: auto;
   }
-}
 
-.social__item {
-  position: relative;
-  height: 23px;
-  width: 31px;
-  box-sizing: border-box;
-  margin-right: 10px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 31px;
-    height: 23px;
-    background-image: url("../img/icon/social-sprite.png");
-    background-repeat: no-repeat;
-  }
-
-  &:first-child::before {
-    background-position: -10px -295px;
-  }
-
-  &:last-child::before {
-    background-position: -10px -7px;
-  }
-
-  &:first-child:hover::before,
-  &:first-child:focus::before,
-  &:first-child:active::before {
-    background-position: -10px -252px;
-  }
-
-  &:last-child:hover::before,
-  &:last-child:focus::before,
-  &:last-child:active::before {
-    background-position: -10px -46px;
+  .social__icon {
+    fill: #000000;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .social__item {
-    &:first-child::before {
-      background-position: -10px -166px;
-    }
-
-    &:last-child::before {
-      background-position: -10px -85px;
-    }
-
-    &:first-child:hover::before,
-    &:first-child:focus::before,
-    &:first-child:active::before {
-      background-position: -10px -209px;
-    }
-
-    &:last-child:hover::before,
-    &:last-child:focus::before,
-    &:last-child:active::before {
-      background-position: -10px -124px;
-    }
-  }
-}
-
