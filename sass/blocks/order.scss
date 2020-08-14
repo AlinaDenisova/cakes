@@ -1,0 +1,148 @@
+.order {
+  padding: 30px 0 125px;
+  background: #e4353e url("../img/delivery-mobile.png") no-repeat center bottom;
+  color: #ffffff;
+}
+
+.order__container {
+  @include container;
+}
+
+.order__title {
+  @include font(28px, 28px);
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-family: $playfair;
+  text-align: center;
+}
+
+.order__list {
+  @include list-reset;
+  padding-left: 47px;
+  counter-reset: myCounter;
+}
+
+.order__item {
+  position: relative;
+  margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    top: -17px;
+    left: -28px;
+
+    font-family: $playfair;
+    font-size: 36px;
+
+    counter-increment: myCounter;
+    content: counter(myCounter);
+  }
+}
+
+.order__slogan {
+  @include font(15px, 18px);
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.order__text {
+  @include font(14px, 17px);
+  margin: 0;
+  font-weight: 400;
+}
+
+//tablet
+
+@media (min-width: $tablet-width) {
+  .order {
+    padding: 0;
+    background: none;
+    background-color: #e4353e;
+  }
+
+  .order__container {
+    padding-top: 45px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    background: #e4353e url("../img/delivery-tablet.png") no-repeat;
+    background-position-y: 40px;
+    background-position-x: calc((100% - 55%) - 280px);
+  }
+
+  .order__title {
+    @include font(34px, 34px);
+    padding-left: 70px;
+    text-align: center;
+  }
+
+  .order__list {
+    margin-left: auto;
+    margin-right: 20px;
+    width: 375px;
+  }
+
+  .order__item {
+    margin-bottom: 30px;
+
+    &::before {
+      left: -40px;
+    }
+  }
+
+  .order__slogan {
+    @include font(15px, 23px);
+    margin-bottom: 0;
+  }
+
+  .order__text {
+    @include font(14px, 16px);
+  }
+}
+
+//desktop
+
+@media (min-width: $desktop-width) {
+  .order {
+    background: #e7383f url("../img/delivery-desktop.png") no-repeat;
+    background-position-y: 60px;
+    background-position-x: calc((100% - 50%) - 255px);
+  }
+
+  .order__container {
+    @include desktop-width;
+    padding: 108px 10px 145px;
+    background: none;
+  }
+
+  .order__title {
+    @include font(50px, 66px);
+    text-align: right;
+    padding-right: 215px;
+  }
+
+  .order__list {
+    width: 480px;
+    margin-right: 0;
+  }
+
+  .order__item {
+    margin-bottom: 35px;
+
+    &::before {
+      @include font(64px, 66px);
+      top: -20px;
+      left: -43px;
+    }
+  }
+
+  .order__slogan {
+    @include font(21px, 27px);
+  }
+
+  .order__text {
+    @include font(20px, 24px);
+    font-weight: normal;
+  }
+}

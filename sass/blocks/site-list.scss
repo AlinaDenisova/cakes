@@ -1,0 +1,45 @@
+.site-list {
+  @include list-reset;
+  background-color: #e7e7e7;
+}
+
+.site-list__item {
+  min-height: 40px;
+  padding: 16px 20px 13px 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.site-list__link {
+  @include font(12px, 12px);
+  color: #383838;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+//desktop
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    padding-top: 15px;
+    display: flex;
+    background-color: $bg-color;
+  }
+
+  .site-list__item {
+    display: flex;
+    padding: 0;
+    padding-right: 45px;
+    box-shadow: none;
+  }
+
+  .site-list__link {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $brand-color;
+    }
+  }
+}

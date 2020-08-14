@@ -1,0 +1,273 @@
+.about-us {
+  padding-top: 60px;
+}
+
+.about-us__container {
+  @include container;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-us__title {
+  @include font(28px, 28px);
+  margin: 0;
+  margin-bottom: 25px;
+  width: 100%;
+  font-family: $playfair;
+  text-align: center;
+  order: -3;
+}
+
+.about-us__add {
+  @include font(22px, 22px);
+  margin: 0;
+  color: #32313d;
+  font-family: $introscriptr;
+  text-align: left;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.about-us__list {
+  @include list-reset;
+}
+
+.about-us__item {
+  margin-bottom: 13px;
+}
+
+.about-us__item-title {
+  margin: 0;
+  margin-bottom: 5px;
+
+  @include font(15px, 20px);
+}
+
+.about-us__item-descr {
+  @include font(14px, 17px);
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: -0.1px;
+}
+
+.about-us__social {
+  @include list-reset;
+  order: -1;
+  margin-right: 50px;
+}
+
+.about-us__social-item {
+  margin-bottom: 15px;
+}
+
+.about-us__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  &:hover {
+    box-shadow: 0 2px 10px 0 rgba(255, 0, 67, 0.3);
+  }
+}
+
+.about-us__social-icon {
+  fill: $brand-color;
+}
+
+.about-us__photo {
+  margin-right: 35px;
+  margin-bottom: 12px;
+  order: -2;
+
+  & img {
+    border-radius: 50%;
+  }
+}
+
+.about-us__commas {
+  @include font(61px, 61px);
+  margin: -25px auto 15px;
+  color: #ffffff;
+  font-family: $playfair;
+  font-weight: bold;
+}
+
+.about-us__quote-wrapper {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.about-us__quote {
+  @include font(16px, 16px);
+  margin: 0 auto;
+  margin-bottom: 5px;
+  width: 280px;
+  font-family: $playfair;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+}
+
+.about-us__signature {
+  margin: 0 auto;
+}
+
+//tablet
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding-top: 50px;
+  }
+
+  .about-us__container {
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .about-us__title {
+    @include font(34px, 34px);
+    padding-top: 10px;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .about-us__add {
+    @include font(26px, 26px);
+    margin-bottom: 0;
+  }
+
+  .about-us__list {
+    padding-top: 5px;
+    width: 53%;
+  }
+
+  .about-us__item {
+    margin-bottom: 5px;
+  }
+
+  .about-us__item__title {
+    @include font(15px, 22px);
+  }
+
+  .about-us__item__descr {
+    @include font(14px, 18px);
+  }
+
+  .about-us__social {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    order: 1;
+  }
+
+  .about-us__social-item {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .about-us__social-item- {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .about-us__photo {
+    margin: 0;
+    margin-top: -70px;
+    order: 0;
+  }
+
+  .about-us__commas {
+    @include font(77px, 80px);
+    margin-top: -25px;
+    width: 100%;
+    text-align: center;
+    order: 2;
+  }
+
+  .about-us__quote-wrapper {
+    margin-bottom: 25px;
+    width: 100%;
+    order: 3;
+  }
+
+  .about-us__quote {
+    @include font(17px, 22px);
+    margin: 0 auto;
+    width: 350px;
+  }
+
+  .about-us__signature {
+    order: 4;
+  }
+}
+
+//desktop
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding-top: 122px;
+    margin-bottom: 25px;
+  }
+
+  .about-us__container {
+    @include desktop-width;
+    margin-bottom: 25px;
+  }
+
+  .about-us__title {
+    @include font(50px, 50px);
+    margin-bottom: 25px;
+  }
+
+  .about-us__add {
+    @include font(35px, 35px);
+  }
+
+  .about-us__list {
+    width: 560px;
+  }
+
+  .about-us__item {
+    margin-bottom: 20px;
+  }
+
+  .about-us__item-title {
+    @include font(20px, 24px);
+    margin-bottom: 10px;
+  }
+
+  .about-us__item-descr {
+    @include font(18px, 22px);
+    font-weight: normal;
+    letter-spacing: normal;
+  }
+
+  .about-us__photo {
+    margin: 0;
+    margin-right: 70px;
+    margin-top: -125px;
+  }
+
+  .about-us__social {
+    margin-top: -115px;
+  }
+
+  .about-us__commas {
+    @include font(140px, 200px);
+    margin-top: -23px;
+    margin-bottom: 0;
+  }
+
+  .about-us__quote {
+    @include font(31px, 39px);
+    margin-bottom: 20px;
+    width: 630px;
+    letter-spacing: 0.3px;
+  }
+}

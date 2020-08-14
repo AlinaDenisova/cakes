@@ -1,0 +1,64 @@
+.individual__container {
+  @include container;
+}
+
+.individual__title {
+  @include font(28px, 30px);
+  font-family: $playfair;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin: 0;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.individual__add {
+  @include font(22px, 22px);
+  color: #32313d;
+  font-weight: 700;
+  font-family: $introscriptr;
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+//tablet
+
+@media (min-width: $tablet-width) {
+  .individual__container {
+    padding: 0 20px;
+  }
+
+  .individual__title {
+    @include font(33px, 33px);
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+
+  .individual__add {
+    @include font(24px, 24px);
+    letter-spacing: 1px;
+    padding-bottom: 35px;
+  }
+}
+
+//desktop
+
+@media (min-width: $desktop-width) {
+  .individual__container {
+    @include desktop-width;
+  }
+
+  .individual__title {
+    @include font(49px, 49px);
+    letter-spacing: 0.4px;
+    margin-bottom: 15px;
+  }
+
+  .individual__add {
+    @include font(34px, 34px);
+    letter-spacing: normal;
+    padding-bottom: 50px;
+  }
+}

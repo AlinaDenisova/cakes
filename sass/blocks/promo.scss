@@ -1,0 +1,180 @@
+.promo {
+  background-image: url("../img/promo-cake-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% -40px;
+  background-size: auto;
+  margin-bottom: 40px;
+}
+
+.promo__container {
+  @include container;
+}
+
+.promo__title {
+  @include font(48px, 35px);
+  color: $text-color;
+  font-family: $playfair;
+  font-weight: 700;
+  letter-spacing: 4.5px;
+  margin: 0;
+  padding-top: 125px;
+  display: block;
+  text-align: center;
+}
+
+.promo__add {
+  @include font(22px, 22px);
+  color: #32313d;
+  font-family: $introscriptr;
+  text-align: center;
+  margin: 0;
+  padding: 25px 0 20px;
+}
+
+.promo__list {
+  @include list-reset;
+}
+
+.promo__item {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.promo__item-text {
+  @include font(14px, 18px);
+  margin: 0;
+  color: #000000;
+  font-weight: 400;
+}
+
+.promo__icon {
+  flex-shrink: 0;
+  margin-right: 10px;
+  fill: $brand-color;
+}
+
+.promo__btn {
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 226px;
+}
+
+//tablet
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: url("../img/promo-cake-tablet.png");
+    background-position-y: 12px;
+    background-position-x: calc((100% - 35%) + 185px);
+    background-size: auto;
+    margin-bottom: 125px;
+  }
+
+  .promo__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo__text {
+    width: 280px;
+  }
+
+  .promo__title {
+    @include font(75px, 55px);
+    text-align: left;
+    letter-spacing: 4px;
+    padding-top: 87px;
+  }
+
+  .promo__add {
+    @include font(36px, 36px);
+    text-align: left;
+    letter-spacing: normal;
+    padding: 30px 0 55px 0;
+  }
+
+  .promo__list {
+    order: 2;
+    display: flex;
+    margin-top: 145px;
+  }
+
+  .promo__item {
+    width: 32.5%;
+    box-sizing: border-box;
+
+    &:last-child {
+      width: 38%;
+    }
+  }
+
+  .promo__item-text {
+    padding-top: 20px;
+  }
+
+  .promo__icon {
+    width: 55px;
+    height: 55px;
+
+    &--box {
+      margin-right: 15px;
+    }
+  }
+
+  .promo__btn {
+    margin: 0;
+  }
+}
+
+//desktop
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../img/promo-cake-desktop.png");
+    background-position-y: 0;
+    background-position-x: calc((100% - 65%) + 270px);
+    background-size: auto;
+    margin-bottom: 10px;
+  }
+
+  .promo__container {
+    @include desktop-width;
+    padding-bottom: 270px;
+  }
+
+  .promo__text {
+    width: 370px;
+  }
+
+  .promo__title {
+    @include font(98px, 68px);
+    text-align: left;
+    letter-spacing: 4px;
+    padding-top: 122px;
+  }
+
+  .promo__add {
+    @include font(41px, 41px);
+    padding: 35px 0 60px 0;
+  }
+
+  .promo__list {
+    margin-top: 130px;
+  }
+
+  .promo__item {
+    margin-right: 62px;
+
+    &:first-child {
+      width: 158px;
+    }
+
+    &:last-child {
+      width: 245px;
+    }
+  }
+
+  .promo-text {
+    padding-top: 10px;
+  }
+}

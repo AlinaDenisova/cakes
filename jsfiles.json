@@ -1,0 +1,17 @@
+[
+  "src/js/scripts/remove-no-js.js",
+  "src/js/scripts/navigation.js",
+  "src/js/scripts/fill-slider.js",
+  "src/js/scripts/fill-slider-indicator.js",
+  "src/js/scripts/fill-section.js",
+  "src/js/scripts/size-slider.js",
+  "src/js/scripts/size-slider-indicator.js",
+  "src/js/scripts/size-section.js",
+  "src/js/scripts/decor-slider.js",
+  "src/js/scripts/decor-slider-indicator.js",
+  "src/js/scripts/decor-section.js",
+  "src/js/scripts/total-choice.js",
+  "src/js/scripts/reviews-slider.js",
+  "src/js/scripts/reviews-slider-indicator.js",
+  "src/js/scripts/reviews-section.js"
+]
